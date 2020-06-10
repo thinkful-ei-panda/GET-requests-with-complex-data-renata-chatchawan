@@ -16,10 +16,18 @@ function getNPSData() {
     .catch((error) => alert(`Something went wrong: ${error.message}`));
 }
 
-function loopThroughNames(responseJson) {
-  for (i = 0; i < responseJson.data.length; i ++) {
-    console.log(responseJson.data[i].fullName);
+function loopThroughNames(rJson) {
+  console.log(rJson);
+  for (let i = 0; i < rJson.data.length; i ++) {
+    console.log(`Park name: ${rJson.data[i].fullName}/nDescription: ${$rJson.data[i].description}`);
   };
 }
+
+$('button').on('click', '.click-me' (event => {
+  console.log('Button to test jQuery was clicked');
+}));
+
+
+
 
 getNPSData();
