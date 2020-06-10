@@ -1,3 +1,4 @@
+import $ from "jquery";
 let apiKey = `9fWdCrkSDadbVwWK7n4bgPexyRy7dtBTpvlfzrG3`;
 
 let url = `developer.nps.gov/api/v1`;
@@ -18,14 +19,14 @@ function getNPSData() {
 
 function loopThroughNames(rJson) {
   console.log(rJson);
-  for (let i = 0; i < rJson.data.length; i ++) {
+  for (let i = 0; i < rJson.data.length; i++) {
     console.log(`Park name: ${rJson.data[i].fullName}/nDescription: ${$rJson.data[i].description}`);
   };
 }
 
-$('button').on('click', '.click-me' (event => {
+$('button').on('click', '.click-me', event => {
   console.log('Button to test jQuery was clicked');
-}));
+});
 
 
 

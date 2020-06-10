@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thinkful-ei-panda/GET-requests-with-complex-data-renata-chatchawan.git"
+    "url": "https://github.com/thinkful-ei-panda/GET-requests-with-complex-data-renata-chatchawan.git"
   },
   "keywords": [],
   "author": "",
@@ -28,5 +28,7 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }
